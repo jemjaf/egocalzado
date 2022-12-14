@@ -18,6 +18,6 @@ import sitemap from "@astrojs/sitemap";
 // https://astro.build/config
 export default defineConfig({
   site: "https://jemjaf.github.io",
-  base: "/egocalzado",
+  base: "/egocalzado/",
   integrations: [tailwind(), alpinejs(), image(), mdx(), sitemap()]
 });
