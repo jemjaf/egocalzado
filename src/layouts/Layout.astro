@@ -40,12 +40,14 @@ const makeTitle = title
     <meta name="generator" content={Astro.generator} />
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-F5T1KY225P"></script>
-    <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-F5T1KY225P'); </script>
+    <script>
+    window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-F5T1KY225P');
+    </script>
 
     <!-- <link rel="preload" as="image" href={src} alt="Hero" /> -->
     <SEO
       title={makeTitle}
-      description="Astroship is a starter website template for Astro built with TailwindCSS."
+      description="El mejor calzado para damas"
       canonical={canonicalURL}
       twitter={{
         creator: "@surjithctly",
@@ -56,11 +58,11 @@ const makeTitle = title
         basic: {
           url: canonicalURL,
           type: "website",
-          title: `Astroship - Starter Template for Astro`,
+          title: `EGO Calzado - Lo mejor para ellas`,
           image: resolvedImageWithDomain,
         },
         image: {
-          alt: "Astroship Homepage Screenshot",
+          alt: "EGO Homepage Screenshot",
         },
       }}
     />
