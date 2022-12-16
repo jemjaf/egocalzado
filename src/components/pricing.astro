@@ -19,7 +19,9 @@ const { plan } = Astro.props;
         }
       </p><br>
       <img
-        src={plan.imagen}
+        src={plan.imagen.src}
+        width={plan.imagen.width}
+        height={plan.imagen.height}
         alt="Product"
         class="w-full h-full object-cover rounded transition  group-hover:-translate-y-1 group-hover:shadow-xl"
       />
