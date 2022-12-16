@@ -1,6 +1,7 @@
 ---
 import { Tick } from "@components/ui/icons";
 import Link from "@components/ui/link.astro";
+import { Image } from "@astrojs/image/components";
 
 const { plan } = Astro.props;
 ---
@@ -18,19 +19,6 @@ const { plan } = Astro.props;
             : plan.price
         }
       </p><br>
-
-      <!-- {
-          <div class="group">
-            <div class="w-full aspect-square">
-              <Image
-                {...plan.imagen}
-                format="avif"
-                alt="Team"
-                class="w-full h-full object-cover rounded transition  group-hover:-translate-y-1 group-hover:shadow-xl"
-              />
-            </div>
-          </div>
-      } -->
       <!-- {
         plan.price.original && (
           <p class="mt-1 text-xl font-medium text-gray-400 line-through md:text-2xl">
