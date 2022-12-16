@@ -18,11 +18,19 @@ const { plan } = Astro.props;
             : plan.price
         }
       </p><br>
-      <Image
-        {...plan.imagen}
-        alt="Product"
-        class="w-full h-full object-cover rounded transition  group-hover:-translate-y-1 group-hover:shadow-xl"
-      />
+
+      {
+          <div class="group">
+            <div class="w-full aspect-square">
+              <Image
+                {...plan.avatar}
+                format="avif"
+                alt="Team"
+                class="w-full h-full object-cover rounded transition  group-hover:-translate-y-1 group-hover:shadow-xl"
+              />
+            </div>
+          </div>
+      }
       <!-- {
         plan.price.original && (
           <p class="mt-1 text-xl font-medium text-gray-400 line-through md:text-2xl">
