@@ -18,10 +18,8 @@ const { plan } = Astro.props;
             : plan.price
         }
       </p><br>
-      <img
-        src={plan.imagen.src}
-        width={plan.imagen.width}
-        height={plan.imagen.width}
+      <Image
+        {...plan.imagen}
         alt="Product"
         class="w-full h-full object-cover rounded transition  group-hover:-translate-y-1 group-hover:shadow-xl"
       />
