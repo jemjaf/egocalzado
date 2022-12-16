@@ -1,5 +1,4 @@
 ---
-import { Picture } from "@astrojs/image/components";
 import { Tick } from "@components/ui/icons";
 import Link from "@components/ui/link.astro";
 
@@ -19,14 +18,7 @@ const { plan } = Astro.props;
             : plan.price
         }
       </p><br>
-      <Picture
-        src={plan.image}
-        widths={[200, 400, 800]}
-        sizes="(max-width: 800px) 100vw, 800px"
-        aspectRatio="1:1"
-        alt="Thumbnail"
-        class="w-full rounded-md aspect-video" 
-      ></Picture>
+      <img src={plan.image} class="w-full rounded-md aspect-video" alt="">
       <!-- {
         plan.price.original && (
           <p class="mt-1 text-xl font-medium text-gray-400 line-through md:text-2xl">
